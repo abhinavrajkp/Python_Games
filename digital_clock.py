@@ -17,7 +17,7 @@ s.setup(width=500, height=150)
 
 # obtain current time from system
 sec = dt.datetime.now().second
-min = dt.datetime.now().minute
+mint = dt.datetime.now().minute
 hr = dt.datetime.now().hour
 r_box.pensize(3)
 r_box.color('black')
@@ -39,7 +39,7 @@ while True:
     t.clear()
 
     t.write(str(hr).zfill(2) + ":" +
-            str(min).zfill(2) + ":" +
+            str(mint).zfill(2) + ":" +
             str(sec).zfill(2), font=("Arial Narrow", 35, "bold") )
     time.sleep(1)
     sec += 1
@@ -48,8 +48,8 @@ while True:
         sec = 0
         min += 1
 
-    if min == 60:
-        min = 0
+    if mint == 60:
+        mint = 0
         hr += 1
 
     if hr == 13:
