@@ -5,11 +5,15 @@ import time
 # turtule obect to display time
 t = turtle.Turtle()
 
+
 #turtle object to create the rectangle box
 r_box = turtle.Turtle()
+
+# turtle screen
 s = turtle.Screen()
 s.title('Digital Clock by @abhinavakp')
-s.bgcolor('Green')
+s.bgcolor('white')
+s.setup(width=500, height=150)
 
 # obtain current time from system
 sec = dt.datetime.now().second
@@ -18,7 +22,8 @@ hr = dt.datetime.now().hour
 r_box.pensize(3)
 r_box.color('black')
 r_box.penup()
-r_box.goto(-20, 0)
+r_box.goto(-70, -30)
+t.goto(-50, -30)
 r_box.pendown()
 
 for intex in range(2):
