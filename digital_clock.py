@@ -5,6 +5,7 @@ import time
 # turtule obect to display time
 t = turtle.Turtle()
 
+#turtle object to create the rectangle box
 r_box = turtle.Turtle()
 s = turtle.Screen()
 s.title('Digital Clock by @abhinavakp')
