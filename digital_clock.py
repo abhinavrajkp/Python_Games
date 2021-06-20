@@ -19,6 +19,7 @@ s.setup(width=500, height=150)
 sec = dt.datetime.now().second
 mint = dt.datetime.now().minute
 hr = dt.datetime.now().hour
+
 r_box.pensize(3)
 r_box.color('black')
 r_box.penup()
@@ -52,5 +53,5 @@ while True:
         mint = 0
         hr += 1
 
-    if hr == 13:
-        hr = 1
+    if hr >= 13:
+        hr = hr - 12
