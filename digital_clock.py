@@ -2,7 +2,7 @@ import turtle
 import datetime as dt
 import time
 
-# turtule obect to display time
+# turtle object to display time
 t = turtle.Turtle()
 
 
