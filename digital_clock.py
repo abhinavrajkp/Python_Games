@@ -50,7 +50,7 @@ while True:
 
     if sec == 60:
         sec = 0
-        min += 1
+        mint += 1
 
     if mint == 60:
         mint = 0
